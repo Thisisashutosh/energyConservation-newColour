@@ -53,11 +53,53 @@
 
 <body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
   <div class="body">
-    <header id="header" class="header-transparent header-effect-shrink"
+    <header id="header" class="header-transparent header-effect-shrink  bg-color-dark-scale-1"
       data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+      <div class="header-body border-top-0 appear-animation" data-appear-animation="fadeIn"
+        data-appear-animation-delay="200">
+        <div class="header-container container-fluid px-lg-4">
+          <div class="header-row px-lg-3">
+
+            <div class="header-column justify-content-center">
+              <div class="header-row">
+                <div
+                  class="header-nav header-nav-line header-nav-bottom-line header-nav-light-text justify-content-center">
+                  <div
+                    class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                    <nav class="collapse">
+                      <ul class="nav nav-pills" id="mainNav">
+                        <li class="active">
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="demo-sass.html"
+                            class="dropdown-item active">OVERALL</a>
+                        </li>
+                        <li>
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.1.html"
+                            class="dropdown-item">SDG 7.1</a>
+                        </li>
+                        <li>
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.2.html"
+                            class="dropdown-item">SDG 7.2</a>
+                        </li>
+                        <li>
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="demo-sass.html"
+                            class="dropdown-item">SDG 7.a</a>
+                        </li>
+                        <li>
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.b.html"
+                            class="dropdown-item">SDG 7.b</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div role="main" class="main">
+    <!-- <div role="main" class="main">
       <section class="section bg-primary curved-border position-relative border-0 m-0" style="height: 100vh" id="intro">
         <div class="container pt-5 mt-5">
           <div class="row justify-content-center pt-5 mt-5">
@@ -74,41 +116,57 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="overview">
         <div class="d-flex justify-content-center">
-          <div class="col-lg-8 d-flex">
+          <div class="col-lg-10 mt-3 d-flex">
             <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative.png" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="section section-height-3 m-0 border-0" id="reviews">
-        <div class="container d-flex justify-content-center">
-          <div class="col-lg-10 d-flex">
-            <img class="img-fluid p-3" src="ashutosh/profiles/7.2/SDG 7.2.1.png" alt="" />
+      <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
+        <div class="graphdata d-flex justify-content-center align-center">
+          <div class="graph">
+            <script type='module'
+              src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+            <tableau-viz id='tableau-viz'
+              src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2' width='1000'
+              height='840' hide-tabs toolbar='bottom'></tableau-viz>
           </div>
+        </div>
+        <div class="datasource d-flex justify-content-center align-center">
+          <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
+            (IRENA)</p>
         </div>
       </section>
 
       <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="pricing">
         <div class="d-flex justify-content-center">
-          <div class="col-lg-8 d-flex">
+          <div class="col-lg-10 d-flex">
             <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative2.0.png" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="section section-height-3 m-0 border-0 d-flex justify-content-center" id="faqs">
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-10 d-flex">
-            <img class="img-fluid p-3" src="ashutosh/profiles/7.2/SDG 7.2-compare.png" alt="" />
+      <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
+        <div class="graphdata d-flex justify-content-center align-center">
+          <div class="graph">
+            <script type='module'
+              src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+            <tableau-viz id='tableau-viz'
+              src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2Change_1' width='1000'
+              height='840' hide-tabs toolbar='bottom'></tableau-viz>
           </div>
+        </div>
+        <div class="datasource d-flex justify-content-center align-center">
+          <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
+            (IRENA)</p>
         </div>
       </section>
 
-      <section class="section section-height-3 m-0 border-0 d-flex justify-content-center" id="faqs">
+      <section class="section section-height-3 bg-white m-0 border-0 d-flex justify-content-center" id="faqs">
         <div class="d-flex justify-content-center">
           <div class="col-lg-10 d-flex">
             <img class="img-fluid p-3" src="ashutosh/profiles/7.2/SDG 7.2-consumption per person.png" alt="" />
