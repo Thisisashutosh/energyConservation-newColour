@@ -31,6 +31,15 @@ a:active {
 	color: #0077b3;
 }
 
+.button{
+	background-color: #cadfe0;
+	border: none;
+}
+
+.button:hover{
+	background-color: #b1cccd;
+}
+
 html .text-color-primary,
 html .text-primary {
 	color: #0088CC !important;

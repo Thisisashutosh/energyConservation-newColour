@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>demo graph</title>
+    <title>SDG 7.1</title>
 
     <meta name="keywords" content="WebSite Template" />
     <meta name="description" content="Porto - Multipurpose Website Template" />
@@ -68,11 +68,11 @@
                                         class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
-                                                <li class="active">
-                                                    <a data-hash data-hash-offset="0" data-hash-offset-lg="60"
-                                                        href="demo-sass.html" class="dropdown-item active">OVERALL</a>
-                                                </li>
                                                 <li>
+                                                    <a data-hash data-hash-offset="0" data-hash-offset-lg="60"
+                                                        href="demo-sass.html" class="dropdown-item">OVERALL</a>
+                                                </li>
+                                                <li class="active">
                                                     <a data-hash data-hash-offset="0" data-hash-offset-lg="60"
                                                         href="page7.1.html" class="dropdown-item">SDG 7.1</a>
                                                 </li>
@@ -82,7 +82,7 @@
                                                 </li>
                                                 <li>
                                                     <a data-hash data-hash-offset="0" data-hash-offset-lg="60"
-                                                        href="demo-sass.html" class="dropdown-item">SDG 7.a</a>
+                                                        href="page7.a.html" class="dropdown-item  active">SDG 7.a</a>
                                                 </li>
                                                 <li>
                                                     <a data-hash data-hash-offset="0" data-hash-offset-lg="60"
@@ -104,61 +104,48 @@
             <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="overview">
                 <div class="d-flex justify-content-center">
                     <div class="col-lg-10 mt-3 d-flex">
-                        <img class="img-fluid p-3" src="ashutosh/profiles/7.1/Narrative.png" alt="" />
+                        <img class="img-fluid p-3" src="ashutosh/profiles/7.a/narrative.png" alt="" />
                     </div>
                 </div>
             </section>
 
-            <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
-                <div class="graphdata d-flex justify-content-center align-center">
-                    <div class="graph">
-                        <script type='module'
-                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-                        <tableau-viz id='tableau-viz'
-                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_1'
-                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center align-center">
+            <section class="section section-height-3 m-0 border-0 bg-white d-flex justify-content-center align-center"
+                id="reviews">
+                <div class="parent" style="width: 90%;">
+                    <div class="barchart">
                         <div class="col-lg-10">
                             <img class="img-fluid p-3" style="height: 100%; width: 100%;"
-                                src="ashutosh/graphdata/graphdata1.png" alt="" />
+                                src="ashutosh/profiles/7.a/barchart.png" alt="" />
                         </div>
                     </div>
-                </div>
-                <div class="datasource d-flex justify-content-center align-center">
-                    <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
-                        (IRENA)</p>
-                </div>
-            </section>
-
-            <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="pricing">
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-10 d-flex">
-                        <img class="img-fluid p-3" src="ashutosh/profiles/7.1/Narrative2.0.png" alt="" />
+                    <div class="textualData">
+                        <p class="lead text-5 fw-normal mb-1 mt-5">Despite the overall increase in percentage share of
+                            international investment to Sub-Saharan
+                            Africa in the past two decades, the net amount of international investments to developing
+                            countries has significantly decreased for the second year in a row</p>
                     </div>
-                </div>
-            </section>
-
-            <section class="section section-height-3 m-0 border-0 bg-white" id="faqs">
-                <div class="graphdata d-flex justify-content-center align-center">
-                    <div class="d-flex flex-column justify-content-center align-center">
-                        <div class="col-lg-10">
-                            <img class="img-fluid p-3" style="height: 100%; width: 100%;"
-                                src="ashutosh/graphdata/graphdata2.png" alt="" />
+                    <div class="chart d-flex flex-column">
+                        <div class="graphdata d-flex justify-content-center align-center">
+                            <div class="graph">
+                                <script type='module'
+                                    src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+                                <tableau-viz id='tableau-viz'
+                                    src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_1'
+                                    width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-center">
+                                <div class="col-lg-10">
+                                    <img class="img-fluid p-3" style="height: 100%; width: 100%;"
+                                        src="ashutosh/graphdata/graphdata1.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datasource d-flex justify-content-center align-center">
+                            <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy
+                                Agency
+                                (IRENA)</p>
                         </div>
                     </div>
-
-                    <div class="graph">
-                        <script type='module'
-                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-                        <tableau-viz id='tableau-viz'
-                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_1-UrbanvRural/sdg7_1-UrbanvRural'
-                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
-                    </div>
-                </div>
-                <div class="datasource d-flex justify-content-center align-center">
-                    <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
-                        (IRENA)</p>
                 </div>
             </section>
 
@@ -173,7 +160,7 @@
                         </a>
                     </div>
                     <div class="secondlink">
-                        <a class="text-decoration-none text-color-light text-7" href="page7.2.html">
+                        <a class="text-decoration-none text-color-light text-7" href="page7.b.html">
                             Next SDG Target
                         </a>
                     </div>

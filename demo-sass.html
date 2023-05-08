@@ -80,7 +80,7 @@
                             class="dropdown-item">SDG 7.2</a>
                         </li>
                         <li>
-                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="demo-sass.html"
+                          <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.a.html"
                             class="dropdown-item">SDG 7.a</a>
                         </li>
                         <li>
@@ -128,12 +128,74 @@
               <div class="carousel-ipad">
                 <div class="carousel-ipad-camera"></div>
                 <div class="owl-carousel owl-theme nav-style-1 m-0"
-                  data-plugin-options="{'autoHeight': true, 'items': 1, 'margin': 10, 'nav': false, 'dots': false, 'stagePadding': 0, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 30000}">
-                  <div>
-                    <img alt="" class="img-fluid rounded-0" src="ashutosh/data2000.png" />
+                  data-plugin-options="{'autoHeight': true, 'items': 1, 'margin': 10, 'nav': false, 'dots': false, 'stagePadding': 0, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 60000}">
+                  <div class="d-flex flex-column justify-content-center">
+                    <div class="title bg-white lead">
+                      <p>Global Electricity Access Profile</p>
+                    </div>
+                    <div class="year d-flex justify-content-center align-center bg-white">
+                      <img alt="" class="img-fluid rounded-0" src="ashutosh/date2000.png"
+                        style="width: 400px; height: 50px;" />
+                    </div>
+                    <div class="imageContainer d-flex justify-content-center bg-white">
+                      <div class="image">
+                        <img alt="" class="img-fluid rounded-0" src="ashutosh/data2000.png" />
+                      </div>
+                      <div class="charts d-flex flex-column justify-content-center">
+                        <div class="firstChart" style="width: 500px; height: 400px;">
+                          <script type='module'
+                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+                          <tableau-viz id='tableau-viz'
+                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/Homepage20002020/Homepage2000AccessDeficitMap'
+                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
+                        </div>
+                        <div class="secondChart" style="width: 500px; height: 700px;">
+                          <script type='module'
+                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+                          <tableau-viz id='tableau-viz'
+                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/Homepage20002020/Homepage2020Top20AccessDeficitCountries'
+                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
+                        </div>
+                        <div class="legend">
+                          <img alt="" class="img-fluid rounded-0" src="ashutosh/legend.png"
+                            style="width: 300px; height: 20px;" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <img alt="" class="img-fluid rounded-0" src="ashutosh/data2020.png" />
+                  <div class="d-flex flex-column justify-content-center">
+                    <div class="title bg-white lead">
+                      <p>Global Electricity Access Profile</p>
+                    </div>
+                    <div class="year d-flex justify-content-center align-center">
+                      <img alt="" class="img-fluid rounded-0" src="ashutosh/date2020.png"
+                        style="width: 400px; height: 50px;" />
+                    </div>
+                    <div class="imageContainer d-flex justify-content-center bg-white">
+                      <div class="image">
+                        <img alt="" class="img-fluid rounded-0" src="ashutosh/data2020.png" />
+                      </div>
+                      <div class="charts d-flex flex-column justify-content-center">
+                        <div class="firstChart" style="width: 500px; height: 400px;">
+                          <script type='module'
+                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+                          <tableau-viz id='tableau-viz'
+                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/Homepage20002020/Homepage2020AccessDeficitMap/c8305e08-1d41-4653-a696-329199d8ed63/fba84793-99f9-4d1d-b90c-a4184e31b9e8'
+                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
+                        </div>
+                        <div class="secondChart" style="width: 500px; height: 700px;">
+                          <script type='module'
+                            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+                          <tableau-viz id='tableau-viz'
+                            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/Homepage20002020/Homepage2020Top20AccessDeficitCountries'
+                            width='1000' height='840' hide-tabs toolbar='bottom'></tableau-viz>
+                        </div>
+                        <div class="legend">
+                          <img alt="" class="img-fluid rounded-0" src="ashutosh/legend.png"
+                            style="width: 300px; height: 20px;" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-ipad-home"></div>
@@ -175,13 +237,13 @@
       <section class="section m-0 mt-4 border-0 p-relative bg-color-dark-scale-1" id="features">
         <div class="container">
           <div class="row py-2 align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <img class="img-fluid" src="ashutosh/png/africanmap.png" alt="" />
-            </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <div class="col-lg-8 text-center">
+              <div class="col-lg-13 text-center">
                 <img class="img-fluid" src="ashutosh/png/Frame.png" alt="" />
               </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img class="img-fluid" src="ashutosh/png/africanmap.png" alt="" />
             </div>
           </div>
         </div>
@@ -197,7 +259,7 @@
         </div>
       </section>
 
-      <section class="section m-0 border-0">
+      <section class="section m-0 border-0 bg-white">
         <div class="container">
           <div class="container d-flex flex-column justify-content-center align-center">
             <p class="lead text-6 mb-5 appear-animation" data-appear-animation="fadeInUpShorter">
@@ -220,19 +282,87 @@
               achieving each target of SDG 7
             </p>
             <div class="frameContainer d-flex justify-content-center">
-              <div class="col-lg-10 d-flex">
-                <a href="page7.1.html">
-                  <img class="img-fluid p-3 cur-pointer" src="ashutosh/frames/frame1.png" alt="" />
-                </a>
-                <a href="page7.2.html">
-                  <img class="img-fluid p-3 cur-pointer" src="ashutosh/frames/frame2.png" alt="" />
-                </a>
-                <a href="page7.b.html">
-                  <img class="img-fluid p-3 cur-pointer" src="ashutosh/frames/frame3.png" alt="" />
-                </a>
-                <a href="page7.b.html">
-                  <img class="img-fluid p-3 cur-pointer" src="ashutosh/frames/frame4.png" alt="" />
-                </a>
+              <div class="col-lg-10 d-flex flex-column" style="width: 100%; height: 100%;">
+                <div class="first d-flex justify-content-center">
+                  <a href="page7.1.html" class="text-decoration-none" style="width: 500px;">
+                    <button class="d-flex border-radius-2 button m-4">
+                      <div class="logo">
+                        <img class="img-fluid p-3 cur-pointer" src="ashutosh/logo/logo7.1.png" alt=""
+                          style="width: 180px; height: 90px;" />
+                      </div>
+                      <div class="textualData mt-3">
+                        <div class="title">
+                          <p class="lead text-6 font-weight-bold mb-0 text-lg-start">Target
+                            7.1</p>
+                        </div>
+                        <div class="desc">
+                          <p class="lead mb-5 text-4 font-weight-normal text-lg-start">Ensure
+                            universal access to
+                            affordable, reliable and modern energy services</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                  <a href="page7.2.html" class="text-decoration-none" style="width: 500px;">
+                    <button class="d-flex border-radius-2 button m-4">
+                      <div class="logo">
+                        <img class="img-fluid p-3 cur-pointer" src="ashutosh/logo/logo7.2.png" alt=""
+                          style="width: 180px; height: 90px;" />
+                      </div>
+                      <div class="textualData mt-3">
+                        <div class="title">
+                          <p class="lead text-6 font-weight-bold mb-0 text-lg-start">Target
+                            7.2</p>
+                        </div>
+                        <div class="desc">
+                          <p class="lead mb-5 text-4 font-weight-normal text-lg-start">
+                            Increase substantially the share of renewable energy in the
+                            global energy mix</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+                <div class="second d-flex justify-content-center">
+                  <a href="page7.a.html" class="text-decoration-none" style="width: 500px;">
+                    <button class="d-flex border-radius-2 button m-4">
+                      <div class="logo">
+                        <img class="img-fluid p-3 cur-pointer" src="ashutosh/logo/logo7.a.png" alt=""
+                          style="width: 220px; height: 90px;" />
+                      </div>
+                      <div class="textualData mt-3">
+                        <div class="title">
+                          <p class="lead text-6 font-weight-bold mb-0 text-lg-start">Target
+                            7.a</p>
+                        </div>
+                        <div class="desc">
+                          <p class="lead mb-3 text-4 font-weight-normal text-lg-start">
+                            Promote global investment in energy infrastructure and clear
+                            energy technology</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                  <a href="page7.b.html" class="text-decoration-none" style="width: 500px;">
+                    <button class="d-flex border-radius-2 button m-4">
+                      <div class="logo">
+                        <img class="img-fluid p-3 cur-pointer" src="ashutosh/logo/logo7.b.png" alt=""
+                          style="width: 250px; height: 90px;" />
+                      </div>
+                      <div class="textualData mt-3">
+                        <div class="title">
+                          <p class="lead text-6 font-weight-bold mb-0 text-lg-start">Target
+                            7.b</p>
+                        </div>
+                        <div class="desc">
+                          <p class="lead mb-3 text-4 font-weight-normal text-lg-start">
+                            Expand and upgrade energy services for supplying modern and
+                            sustainable energy services for all in developing countries</p>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
