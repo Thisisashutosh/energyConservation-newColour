@@ -68,17 +68,17 @@
                     class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
-                        <li class="active">
+                        <li>
                           <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="demo-sass.html"
-                            class="dropdown-item active">OVERALL</a>
+                            class="dropdown-item">OVERALL</a>
                         </li>
                         <li>
                           <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.1.html"
                             class="dropdown-item">SDG 7.1</a>
                         </li>
-                        <li>
+                        <li class="active">
                           <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="page7.2.html"
-                            class="dropdown-item">SDG 7.2</a>
+                            class="dropdown-item active">SDG 7.2</a>
                         </li>
                         <li>
                           <a data-hash data-hash-offset="0" data-hash-offset-lg="60" href="demo-sass.html"
@@ -99,95 +99,101 @@
       </div>
     </header>
 
-    <!-- <div role="main" class="main">
-      <section class="section bg-primary curved-border position-relative border-0 m-0" style="height: 100vh" id="intro">
-        <div class="container pt-5 mt-5">
-          <div class="row justify-content-center pt-5 mt-5">
-            <div class="col-lg-7 text-center pt-3">
-              <h1 class="text-color-light font-weight-extra-bold text-12 line-height-2 appear-animation"
-                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-                SDG 7.2
-              </h1>
-              <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                <p class="text-color-light opacity-6 text-5 pb-3 mb-4">
-                  SDG 7.2 Share of Renewable Energy
-                </p>
-              </div>
-            </div>
-          </div>
+    <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="overview">
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-10 mt-3 d-flex">
+          <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative.png" alt="" />
         </div>
-      </section> -->
+      </div>
+    </section>
 
-      <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="overview">
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-10 mt-3 d-flex">
-            <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative.png" alt="" />
-          </div>
+    <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
+      <div class="graphdata d-flex justify-content-center align-center">
+        <div class="graph">
+          <script type='module'
+            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+          <tableau-viz id='tableau-viz'
+            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2' width='1000'
+            height='840' hide-tabs toolbar='bottom'></tableau-viz>
         </div>
-      </section>
+      </div>
+      <div class="datasource d-flex justify-content-center align-center">
+        <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
+          (IRENA)</p>
+      </div>
+    </section>
 
-      <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
-        <div class="graphdata d-flex justify-content-center align-center">
-          <div class="graph">
-            <script type='module'
-              src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-            <tableau-viz id='tableau-viz'
-              src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2' width='1000'
-              height='840' hide-tabs toolbar='bottom'></tableau-viz>
-          </div>
+    <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="pricing">
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-10 d-flex">
+          <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative2.0.png" alt="" />
         </div>
-        <div class="datasource d-flex justify-content-center align-center">
-          <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
-            (IRENA)</p>
+      </div>
+    </section>
+
+    <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
+      <div class="graphdata d-flex justify-content-center align-center">
+        <div class="graph">
+          <script type='module'
+            src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+          <tableau-viz id='tableau-viz'
+            src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2Change_1' width='1000'
+            height='840' hide-tabs toolbar='bottom'></tableau-viz>
         </div>
-      </section>
+      </div>
+      <div class="datasource d-flex justify-content-center align-center">
+        <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
+          (IRENA)</p>
+      </div>
+    </section>
 
-      <section class="section bg-dark section-height-3 m-0 border-0 d-flex justify-content-center" id="pricing">
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-10 d-flex">
-            <img class="img-fluid p-3" src="ashutosh/profiles/7.2/Narrative2.0.png" alt="" />
-          </div>
+    <section class="section section-height-3 bg-white m-0 border-0 d-flex justify-content-center" id="faqs">
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-10 d-flex">
+          <img class="img-fluid p-3" src="ashutosh/profiles/7.2/SDG 7.2-consumption per person.png" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section section-height-3 m-0 border-0 bg-white" id="reviews">
-        <div class="graphdata d-flex justify-content-center align-center">
-          <div class="graph">
-            <script type='module'
-              src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-            <tableau-viz id='tableau-viz'
-              src='https://us-west-2b.online.tableau.com/t/infoviz2023sdg7/views/sdg-7_17_2/SDG7_2Change_1' width='1000'
-              height='840' hide-tabs toolbar='bottom'></tableau-viz>
-          </div>
+    <section
+      class="section section-height-3 bg-dark m-0 border-0 d-flex flex-column justify-content-center align-center"
+      id="faqs">
+      <div class="links d-flex justify-content-around align-center" style="width: 100%; margin-bottom: 100px;">
+        <div class="firstlink">
+          <a class="text-decoration-none text-color-light text-7" href="demo-sass.html">
+            Back to Home
+          </a>
         </div>
-        <div class="datasource d-flex justify-content-center align-center">
-          <p class="lead text-5 fw-normal mb-1 mt-5">Data source: International Renewable Energy Agency
-            (IRENA)</p>
+        <div class="secondlink">
+          <a class="text-decoration-none text-color-light text-7" href="page7.b.html">
+            Next SDG Target
+          </a>
         </div>
-      </section>
-
-      <section class="section section-height-3 bg-white m-0 border-0 d-flex justify-content-center" id="faqs">
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-10 d-flex">
-            <img class="img-fluid p-3" src="ashutosh/profiles/7.2/SDG 7.2-consumption per person.png" alt="" />
-          </div>
+      </div>
+      <div class="d-flex justify-content-center align-center">
+        <div class="info" style="width: 65%;">
+          <p class="text-color-light opacity-8 text-3 m-0 p-0 ">This visualization was created by Yitian
+            Li,
+            Natalie Chan, and Yusuf Abdul for Spring InfoViz 2023</p>
+          <p class="">Graphs created using tableau, D3 and Javascript</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Vendor -->
-      <script src="vendor/plugins/js/plugins.min.js"></script>
+    <!-- Vendor -->
+    <script src="vendor/plugins/js/plugins.min.js"></script>
 
-      <!-- Theme Base, Components and Settings -->
-      <script src="js/theme.js"></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme.js"></script>
 
-      <!-- Current Page Vendor and Views -->
-      <script src="js/views/view.contact.js"></script>
+    <!-- Current Page Vendor and Views -->
+    <script src="js/views/view.contact.js"></script>
 
-      <!-- Theme Custom -->
-      <script src="js/custom.js"></script>
+    <!-- Theme Custom -->
+    <script src="js/custom.js"></script>
 
-      <!-- Theme Initialization Files -->
-      <script src="js/theme.init.js"></script>
+    <!-- Theme Initialization Files -->
+    <script src="js/theme.init.js"></script>
 </body>
 
 </html>
